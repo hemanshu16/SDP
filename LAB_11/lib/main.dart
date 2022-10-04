@@ -1,7 +1,24 @@
-/*
 import 'package:flutter/material.dart';
 
 
+import 'pages/choose_location.dart';
+import 'pages/home.dart';
+import 'pages/loading.dart';
+
+void main() => runApp(MaterialApp(
+    initialRoute: '/loading', routes: {
+  '/': (context) => Loading(),
+  '/home': (context) => Home(),
+  '/location': (context) => ChooseLocation(),
+  '/loading' : (context) => Loading(),
+}
+));
+
+
+
+
+
+/*
 void main() {
   runApp(const MyApp());
 }
@@ -116,113 +133,3 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 */
-
-import 'package:flutter/material.dart';
-void main() => runApp(MaterialApp(
-       home: MyApp(),
-));
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return
-      Scaffold(
-        appBar: AppBar(
-          title: Center(child: Text('Lab - 8.1 Tutorial')),
-        ),
-        // body: Padding(
-        //   padding: EdgeInsets.all(50),
-        //   child: Text('Hello only Padding'),
-        // ),
-        // body:Row(
-        //   children: [
-        //     Text('Hello Row'),
-        //     FlatButton(
-        //         onPressed: (){},
-        //         color: Colors.blue,
-        //         child: Text('Press Me')
-        //     ),
-        //     Container(
-        //       color: Colors.cyanAccent,
-        //       padding: EdgeInsets.all(30.0),
-        //       child: Text('Inside Container'),
-        //     )
-        //   ],
-        // ),
-        // body: Center(child: Column(
-        //   mainAxisAlignment: MainAxisAlignment.center,
-        //   crossAxisAlignment: CrossAxisAlignment.center,
-        //   // children: [
-        //   //   Text('Hello Row'),
-        //   //   FlatButton(
-        //   //       onPressed: (){},
-        //   //       color: Colors.blue,
-        //   //       child: Text('Press Me')
-        //   //   ),
-        //   //   Container(
-        //   //     color: Colors.cyanAccent,
-        //   //     padding: EdgeInsets.all(30.0),
-        //   //     child: Text('Inside Container'),
-        //   //   )
-        //   // ],
-        //   // children: [
-        //   //   // Row(
-        //   //   //   children: [
-        //   //   //     Padding(
-        //   //   //       padding: const EdgeInsets.all(12.0),
-        //   //   //       child: Text('Hello DDu, .....   '),
-        //   //   //     ),
-        //   //   //     Padding(
-        //   //   //       padding: const EdgeInsets.all(12.0),
-        //   //   //       child: Text(' ..... 5th Sem Studenents ...'),
-        //   //   //     )
-        //   //   //   ],
-        //   //   // ),
-        //   //   Container(
-        //   //     color: Colors.cyanAccent,
-        //   //     padding: EdgeInsets.all(15),
-        //   //     child:Text('Inside Container 1'),
-        //   //   ),
-        //   //   Padding(
-        //   //     padding: const EdgeInsets.all(15.0),
-        //   //     child: Container(
-        //   //       color: Colors.blue,
-        //   //       padding: EdgeInsets.all(30),
-        //   //       child:Text('Inside Container 2'),
-        //   //     ),
-        //   //   ),
-        //   //   Container(
-        //   //     color: Colors.cyanAccent,
-        //   //     padding: EdgeInsets.all(15),
-        //   //     child:Text('Inside Container 3'),
-        //   //   )
-        //   // ],
-        //
-        // ),
-        // body: Row(
-        //   mainAxisAlignment: MainAxisAlignment.center,
-        //   children: [
-        //     Container(
-        //       color: Colors.amber[700],
-        //       padding: EdgeInsets.all(40),
-        //       child:Text('1'),
-        //     ),
-        //     Container(
-        //       color: Colors.indigo[900],
-        //       padding: EdgeInsets.all(40),
-        //       child:Text('2'),
-        //     ),
-        //     Container(
-        //       color: Colors.green[800],
-        //       padding: EdgeInsets.all(40),
-        //       child:Text('3'),
-        //     )
-        //
-        //   ],
-        // ),
-        );
-
-
-  }
-}
-// home:
